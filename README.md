@@ -12,12 +12,11 @@ module "hetzner_server_apache" {
 ```
 
 <!-- BEGIN_TF_DOCS -->
-
 ## Providers
 
-| Name                                                      | Version |
-| --------------------------------------------------------- | ------- |
-| <a name="provider_hcloud"></a> [hcloud](#provider_hcloud) | ~> 1.49 |
+| Name | Version |
+|------|---------|
+| <a name="provider_hcloud"></a> [hcloud](#provider\_hcloud) | ~> 1.49 |
 
 ## Modules
 
@@ -25,23 +24,22 @@ No modules.
 
 ## Inputs
 
-| Name                                                | Description                                                           | Type          | Default | Required |
-| --------------------------------------------------- | --------------------------------------------------------------------- | ------------- | ------- | :------: |
-| <a name="input_apply"></a> [apply](#input_apply)    | Label selectors or server to apply the new cloud firewall to.         | `any`         | `{}`    |    no    |
-| <a name="input_labels"></a> [labels](#input_labels) | A map of labels to apply to the newly created Hetzner Cloud firewall. | `map(string)` | n/a     |   yes    |
-| <a name="input_name"></a> [name](#input_name)       | The name to give to the new Hetzner Cloud firewall.                   | `string`      | n/a     |   yes    |
-| <a name="input_rules"></a> [rules](#input_rules)    | The firewall rules to apply to the cloud firewall on creation.        | `any`         | `{}`    |    no    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_apply"></a> [apply](#input\_apply) | Label selectors or server to apply the new cloud firewall to. | `any` | `{}` | no |
+| <a name="input_labels"></a> [labels](#input\_labels) | A map of labels to apply to the newly created Hetzner Cloud firewall. | `map(string)` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | The name to give to the new Hetzner Cloud firewall. | `string` | n/a | yes |
+| <a name="input_rules"></a> [rules](#input\_rules) | The firewall rules to apply to the cloud firewall on creation. | `any` | `{}` | no |
 
 ## Outputs
 
-| Name                                                        | Description                                                      |
-| ----------------------------------------------------------- | ---------------------------------------------------------------- |
-| <a name="output_apply_to"></a> [apply_to](#output_apply_to) | The 'apply_to' configuration for the new Hetzner Cloud firewall. |
-| <a name="output_id"></a> [id](#output_id)                   | The unique ID for the new Hetzner Cloud firewall.                |
-| <a name="output_labels"></a> [labels](#output_labels)       | The labels for the new Hetzner Cloud firewall.                   |
-| <a name="output_name"></a> [name](#output_name)             | The name for the new Hetzner Cloud firewall.                     |
-| <a name="output_rules"></a> [rules](#output_rules)          | The rules for the new Hetzner Cloud firewall.                    |
-
+| Name | Description |
+|------|-------------|
+| <a name="output_apply_to"></a> [apply\_to](#output\_apply\_to) | The 'apply\_to' configuration for the new Hetzner Cloud firewall. |
+| <a name="output_id"></a> [id](#output\_id) | The unique ID for the new Hetzner Cloud firewall. |
+| <a name="output_labels"></a> [labels](#output\_labels) | The labels for the new Hetzner Cloud firewall. |
+| <a name="output_name"></a> [name](#output\_name) | The name for the new Hetzner Cloud firewall. |
+| <a name="output_rules"></a> [rules](#output\_rules) | The rules for the new Hetzner Cloud firewall. |
 <!-- END_TF_DOCS -->
 
 ### 🔃 Contributing
